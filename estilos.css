@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+header{
+    height: 68px;
+/*    background-image: linear-gradient(to left, #7773ed, #6361c8, #32306a, #191a39,  #17163e, #100e31, #0d0c2f, #050521, #1e1d39, #1c1a45,#1a194c,  #1b1f67, #24218d, #2b2eb5 , #3e42cb, #676bd7,  #c3c2dc);*/  
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%; 
+    
+}
+
+.container-fluid{
+    background-color:beige;
+}
+
+.cara {
+    border-radius: 500px;
+    height: 200px;
+}
+.uno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background-color: #303030;
+    color: white;
+    /* padding-top: 10%; */
+}
+
+
+.caja-central{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+    padding: 10px; 
+}
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #424242;
+}
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #F2F2F2;
+    color: #303030;
+    padding: 10px;
+}
+
+.dos{
+    background-color: #F2F2F2;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.sobreMi{
+    padding: 100px;
+    margin-bottom: 800px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+}
+.aptitudes{
+    width: 50%;
+}
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.tech-list img{
+    transition: all 300ms;
+    position: relative;
+}
+
+.tech-list img:Hover{
+    transform: scale(1.15);
+}
+
+.tech{
+    height: 90px;
+}
+
+.tres{
+    padding: 220px;
+    background-color: #303030;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 50px;
+    text-align: center;
+    width: 40%;
+    border: solid #f2f2f2 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card a, footer a {
+    color: white;
+}
+
+.card-tres{
+    margin-top: 50px;
+    text-align: center;
+    width: 40%;
+    border: solid #f2f2f2 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-tres img{
+    width: 100%;
+}
+.card-tres a, footer a {
+    color: white;
+}
+
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+
+
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .caja-central{
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+    }
+    .caja-cara{
+        width: 100%;
+        height: 50%;
+    }
+    .caja-presentacion{
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
+    .aptitudes{
+        width: auto;
+    }
+    .dos{
+        height: auto;
+        padding: 0 10px 10px 10px;
+
+    }
+    .tres{
+        height: auto;
+    }
+    .proyectos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .red-social{
+        margin: 0 10px 0 10px;
+    }
+}
