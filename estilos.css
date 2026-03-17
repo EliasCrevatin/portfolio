@@ -1,226 +1,184 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-
+font-family: 'Inter', 'Open Sans', sans-serif;
+background:#0F172A;
+color:#E5E7EB;
+line-height:1.6;
 }
+
+/* CONTAINER */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* HEADER */
+
 header{
-    height: 68px;
-/*    background-image: linear-gradient(to left, #7773ed, #6361c8, #32306a, #191a39,  #17163e, #100e31, #0d0c2f, #050521, #1e1d39, #1c1a45,#1a194c,  #1b1f67, #24218d, #2b2eb5 , #3e42cb, #676bd7,  #c3c2dc);*/  
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
-    background-clip: text;
-    animation: color 3s linear infinite;
-    background-size: 500%; 
-    
+text-align:center;
+padding:90px 20px;
 }
 
-.container-fluid{
-    background-color:#f2f2f2;
+h1{
+font-size:48px;
+color:white;
+font-weight:700;
+letter-spacing:1px;
 }
 
-.cara {
-    border-radius: 500px;
-    height: 200px;
-}
-.uno{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: calc(100vh - 65px);
-    background-color: #303030;
-    color: white;
-    /* padding-top: 10%; */
+.hero-role{
+color:#2563EB;
+font-size:20px;
+margin-top:10px;
+font-weight:600;
 }
 
+/* CONTACT */
 
-.caja-central{
-    margin-top: 10%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 50%;
-    padding: 10px; 
-}
-.caja-cara{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    background-color: #424242;
-}
-.caja-presentacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    background-color: #F2F2F2;
-    color: #303030;
-    padding: 10px;
+.contact{
+margin-top:25px;
 }
 
-.dos{
-    background-color: #F2F2F2;
-    height: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
+.contact a{
+color:#10B981;
+text-decoration:none;
+margin:0 15px;
+font-weight:600;
+transition:0.3s;
 }
 
-.sobreMi{
-    padding: 100px;
-    margin-bottom: 800px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-}
-.aptitudes{
-    width: 50%;
-}
-.tech-list{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
+.contact a:hover{
+color:#34D399;
 }
 
-.tech-list img{
-    transition: all 300ms;
-    position: relative;
+/* SECTIONS */
+
+.section{
+margin-top:80px;
 }
 
-.tech-list img:Hover{
-    transform: scale(1.15);
+h2{
+font-size:32px;
+margin-bottom:25px;
+color:white;
+border-left:4px solid #2563EB;
+padding-left:12px;
 }
 
-.tech{
-    height: 90px;
+/* TEXT */
+
+p{
+color:#CBD5F5;
+font-size:16px;
 }
 
-.tres{
-    padding: 220px;
-    background-color: #303030;
-    height: 600px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+/* EXPERIENCE */
+
+.experience-item{
+margin-bottom:40px;
+padding:20px;
+background:#1E293B;
+border-radius:10px;
+transition:0.3s;
 }
 
-.proyectos{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
+.experience-item:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.experience-item h3{
+color:#2563EB;
+margin-bottom:5px;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
 }
 
 .card{
-    margin-top: 50px;
-    text-align: center;
-    width: 40%;
-    border: solid #f2f2f2 1px;
-    border-radius: 10px;
-    padding: 10px;
-}
-.card img{
-    width: 100%;
-}
-.card a, footer a {
-    color: white;
+background:#1E293B;
+padding:25px;
+border-radius:12px;
+flex:1 1 220px;
+transition:0.3s;
 }
 
-.card-tres{
-    margin-top: 20px;
-    text-align: center;
-    width: 40%;
-    border: solid #f2f2f2 1px;
-    border-radius: 10px;
-    padding: 10px;
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.4);
 }
 
-.proyectos {
-    width: 30%;
-    display: flex;
-    justify-content: center;
+.card h3{
+margin-bottom:10px;
+color:white;
 }
 
-.card-tres img {
-    width: 100%;
-}
-.card-tres a, footer a {
-    color: white;
+/* TAGS */
+
+.tag{
+display:inline-block;
+background:#0F172A;
+border:1px solid #334155;
+padding:6px 12px;
+border-radius:20px;
+margin:5px;
+font-size:14px;
+transition:0.3s;
 }
 
-.red-social{
-    height: 60px;
-    background-color: #F2F2F2;
-    border-radius: 10px;
+.tag:hover{
+background:#2563EB;
+border-color:#2563EB;
 }
+
+/* EDUCATION */
+
+.section strong{
+color:white;
+}
+
+/* FOOTER */
 
 footer{
-    background-color: #424242;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #F2F2F2;
-    height: 250px;
+margin-top:80px;
+text-align:center;
+color:#94A3B8;
+font-size:14px;
+padding-bottom:40px;
 }
 
+/* RESPONSIVE */
 
-.contacto{
-    width: 30%;
-    display: flex;
-    justify-content: center;
+@media(max-width:900px){
+
+h1{
+font-size:36px;
 }
 
-@media (max-width: 1000px) {
-    .caja-central{
-        width: 90%;
-        height: 70%;
-        flex-direction: column;
-    }
-    .caja-cara{
-        width: 100%;
-        height: 50%;
-    }
-    .caja-presentacion{
-        width: 100%;
-        height: 50%;
-        align-items: flex-start;
-    }
-    .aptitudes{
-        width: auto;
-    }
-    .dos{
-        height: auto;
-        padding: 0 10px 10px 10px;
+h2{
+font-size:26px;
+}
 
-    }
-    .tres{
-        height: auto;
-    }
-    .proyectos{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 40px;
-    }
-    .card{
-        width: 80%;
-        margin-top: 20px;
-    }
-    .red-social {
-        margin: 0 10px 0 10px;
-        align-items: center;
-    }
+.skills{
+flex-direction:column;
+}
+
+.card{
+width:100%;
+}
+
 }
